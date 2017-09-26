@@ -61,15 +61,21 @@ sentido anti-horário e o outro lado é lado de trás. Assumindo que `e` não
 frente do triângulo ou o de trás (veja Figura b).
 
     - Não podemos afirmar uma resposta única, pois não foi definido um posicionamento fixo para `e`, por isso devemos relacioná-lo com o plano formado por `△pqr`. Uma maneira de fazer isso é através da normal do plano, que pode ser calculada de diversas formas, dadas abaixo: 
+    
     a.  `pq x pr`
+
     b.  `rp x rq`
+
     c.  `qr x qp`
 
     Sendo os vetores `ab`, com `a` e `b` podendo ser `p`, `q` ou `r`, calculados através da subtração de `b` por `a`.
     
     - Diante disso, agora iremos calcular um outro vetor, que dependendo da normal escolhida, será o seguinte:
+    
     a.  `pe` (e - p)
+
     b.  `re` (e - r)
+
     c.  `qe` (e - q)
 
     - Possuindo agora um vetor normal e um outro vetor relacionando a origem do vetor normal escolhido com o ponto `e`, precisamos calcular o ângulo entre esses dois vetores. Para achar tal angulo basta fazer a seguinte operação: `ângulo = arccos [(u.v)/(|u|.|v|)]`, sendo `u` e `v` os vetores respectivos a normal e ao vetor formado entre a origem do vetor normal e o ponto `e`, e `|u|` e `|v|` seus respectivos módulos.
