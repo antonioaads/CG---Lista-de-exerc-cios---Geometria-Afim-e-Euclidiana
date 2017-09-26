@@ -80,7 +80,7 @@ frente do triângulo ou o de trás (veja Figura b).
 
     - Possuindo agora um vetor normal e um outro vetor relacionando a origem do vetor normal escolhido com o ponto `e`, precisamos calcular o ângulo entre esses dois vetores. Para achar tal angulo basta fazer a seguinte operação: `ângulo = arccos [(u.v)/(|u|.|v|)]`, sendo `u` e `v` os vetores respectivos a normal e ao vetor formado entre a origem do vetor normal e o ponto `e`, e `|u|` e `|v|` seus respectivos módulos.
    
-    - Já com o ângulo em mãos, caso seja menor que 90°, o ponto `e` está olhando para a frente do `△pqr`, caso seja maior que 90, estará olhando para a parte de trás do `△pqr`. Caso seja igual a 90°, o ponto estará coplanar ao `△pqr`, porém tal caso foi retirado pelo enunciado. 
+    - Já com o ângulo em mãos, caso seja menor que 90°, o ponto `e` está olhando para a frente do `△pqr`, caso seja maior que 90°, estará olhando para a parte de trás do `△pqr`. Caso seja igual a 90°, o ponto estará coplanar ao `△pqr`, porém tal caso foi retirado pelo enunciado. 
 
         
    <!--
