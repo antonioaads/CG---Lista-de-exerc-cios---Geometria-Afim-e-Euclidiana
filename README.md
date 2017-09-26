@@ -48,14 +48,10 @@ nível ou funções trigonométricas.
 1. Dado um triângulo `△pqr` no plano, explique como determinar um quarto
 ponto `s` tal que `{p, s, q, r}` defina um paralelogramo que tem pq como
 diagonal (veja Figura a).
-    -Podemos, a parir do vértice que possui ângulo de 90° (r), calcular o vetor, no caso da figura, `rp` (p-r), e posteriormente somá-lo ao ponto restante, ou seja, o ponto `q`. 
-    `s = q + rp`
-    -Outra forma possível, é fazermos ao contrário, calcular o vetor `rq`(q-r) e posteriormente somá-lo com o ponto restante, neste caso, o ponto `p`.
-    `s = q + rp`
-  <!--
-    Basta fazer s = q + rp, com rp = p-r, ou
-                s = p + rq, com rq = q-r
-   -->
+
+    -Podemos, a parir do vértice que possui ângulo de 90° (r), calcular o vetor, no caso da figura, `rp` (p-r), e posteriormente somá-lo ao ponto restante, ou seja, o ponto `q`. Resumindo:`s = q + rp`
+
+    -Outra forma possível, é fazermos ao contrário, calcular o vetor `rq`(q-r) e posteriormente somá-lo com o ponto restante, neste caso, o ponto `p`. Resumindo: `s = q + rp`
 
 1. Um observador está localizado em um ponto `e` no espaço R<sup>3</sup> e
 ele enxerga um triângulo definido pelos vértices `p`, `q` e `r`. O lado da
@@ -63,10 +59,24 @@ frente desse triângulo é o lado para o qual `p`, `q` e `r` aparecem no
 sentido anti-horário e o outro lado é lado de trás. Assumindo que `e` não
 é co-planar com o triângulo, **discuta** se o observador vê o lado da
 frente do triângulo ou o de trás (veja Figura b).
+
     - Não podemos afirmar uma resposta única, pois não foi definido um posicionamento fixo para `e`, por isso devemos relacioná-lo com o plano formado por `△pqr`. Uma maneira de fazer isso é através da normal do plano, que pode ser calculada de diversas formas, dadas abaixo: 
-        -pq x pr
-        -pq x pr
-        -pq x pr
+    a.  `pq x pr`
+    b.  `rp x rq`
+    c.  `qr x qp`
+
+    Sendo os vetores `ab`, com `a` e `b` podendo ser `p`, `q` ou `r`, calculados através da subtração de `b` por `a`.
+    
+    - Diante disso, agora iremos calcular um outro vetor, que dependendo da normal escolhida, será o seguinte:
+    a.  `pe` (e - p)
+    b.  `re` (e - r)
+    c.  `qe` (e - q)
+
+    - Possuindo agora um vetor normal e um outro vetor relacionando a origem do vetor normal escolhido com o ponto `e`, precisamos calcular o ângulo entre esses dois vetores. Para achar tal angulo basta fazer a seguinte operação: `ângulo = arccos [(u.v)/(|u|.|v|)]`, sendo `u` e `v` os vetores respectivos a normal e ao vetor formado entre a origem do vetor normal e o ponto `e`, e `|u|` e `|v|` seus respectivos módulos.
+   
+    - Já com o ângulo em mãos, caso seja menor que 90°, o ponto `e` está olhando para a frente do `△pqr`, caso seja maior que 90, estará olhando para a parte de trás do `△pqr`. Caso seja igual a 90°, o ponto estará coplanar ao `△pqr`, porém tal caso foi retirado pelo enunciado. 
+
+        
    <!--
      Achamos a normal n fazendo pq x pr.
      Achamos o vetor pe (e - p)
