@@ -19,10 +19,10 @@ escrever as matrizes com as coordenadas homogêneas.
 
     ![](images/MatrizC.png)
 1. Reflexão pelos eixos X e Y em 2D
-    - Considerando rotação sobre o eixo x:
+    - Considerando rotação sobre o eixo y:
 
     ![](images/MatrizDa.png)
-    - Considerando rotação sobre o eixo y:
+    - Considerando rotação sobre o eixo x:
 
     ![](images/MatrizDb.png)
     - Considerando rotação sobre os dois eixos:
