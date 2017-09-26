@@ -9,12 +9,30 @@ rotação, escala), escreva a matriz de transformação
 escrever as matrizes com as coordenadas homogêneas.
 
 1. Translação em 2D com um deslocamento t = (4, 9)
-(images/MatrizA.png)
+
+    ![](images/MatrizA.png)
 1. Rotação 2D no eixo Z por um ângulo &theta; = π/4
    - Considere `sin(π/4) = cos(π/4) = 0,71`
+
+    ![](images/MatrizB.png)
 1. Escala não uniforme de 200% no eixo x, 75% no eixo y em 2D
+
+    ![](images/MatrizC.png)
 1. Reflexão pelos eixos X e Y em 2D
+    - Considerando rotação sobre o eixo x:
+
+    ![](images/MatrizDa.png)
+    - Considerando rotação sobre o eixo y:
+
+    ![](images/MatrizDb.png)
+    - Considerando rotação sobre os dois eixos:
+
+    ![](images/MatrizDc.png)
 1. Rotação em 2D em relação ao ponto P(5,2)
+    
+    ![](images/MatrizE.png)
+
+    
 
 ---
 ### **Questão 2** - 1 ponto:
