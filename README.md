@@ -82,18 +82,6 @@ frente do triângulo ou o de trás (veja Figura b).
    
     - Já com o ângulo em mãos, caso seja menor que 90°, o ponto `e` está olhando para a frente do `△pqr`, caso seja maior que 90°, estará olhando para a parte de trás do `△pqr`. Caso seja igual a 90°, o ponto estará coplanar ao `△pqr`, porém tal caso foi retirado pelo enunciado. 
 
-        
-   <!--
-     Achamos a normal n fazendo pq x pr.
-     Achamos o vetor pe (e - p)
-     Se o ângulo entre n e pe for menor que 90, eles
-     o ponto e está olhando para o lado de cima. Se
-     o ângulo for maior que 90, está olhando por trás.
-
-     Para achar o ângulo, basta usar produto interno dos
-     vetores unitários de n e pe, encontrando o cosseno.
-    -->
-
 ---
 ### **Questão 3: mudança de sistema de coordenadas** - 1 ponto
 
