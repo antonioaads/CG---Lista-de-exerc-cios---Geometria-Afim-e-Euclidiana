@@ -10,7 +10,7 @@ escrever as matrizes com as coordenadas homogêneas.
 
 1. Translação em 2D com um deslocamento t = (4, 9)
 
-    ![teste](images/MatrizA.png)
+    ![](images/MatrizA.png)
 1. Rotação 2D no eixo Z por um ângulo &theta; = π/4
    - Considere `sin(π/4) = cos(π/4) = 0,71`
 
@@ -108,6 +108,12 @@ capturadas no sistema da janela (`J`). Pede-se:
 
 1. Represente a base e a origem do sistema `J` (_i.e._, `O`<sub>J</sub>,
    `x`<sub>J</sub>, `y`<sub>J</sub>) no sistema M.
+
+    - Pensaremos em eixos separadamente, primeiramente em x. Como eles estão alinhados verticalmente, temos que `x`<sub>J</sub> = `x`<sub>M</sub>), com isso podemos concluir que a base `x`<sub>J</sub> em relação ao sistema M é igual a: `x`<sub>J</sub>[M] = (1,0).
+    
+    - Iremos levar em consideração, agora, as coordenadas y. Se repararmos atenciosamente, percebemos que se aumentarmos a coordenada de `y`<sub>M</sub>) e aumentarmos a coordenada de `y`<sub>J</sub>), ambas cresecem na mesma direção, porém em sentidos opostos. Logo, podemos concluir que `y`<sub>J</sub>) = `-1y`<sub>M</sub>), tendo `y`<sub>j</sub>)[M] = (0,-1).
+
+    - Para conseguirmos o relacionamento entre as origens, podemos considerar a origem `O`<sub>J</sub>) como se fosse um ponto, e analisar suas coordenadas em relação a origem `O`<sub>M</sub>), obtendo `O`<sub>J</sub>)[M] = (0,600).
    <!--
      Pergunta-se: quantos Xm vale 1 Xj?
      Raciocínio: 800Xm equivalem a 800Xj. Logo, Xj = Xm. Sendo assim,
