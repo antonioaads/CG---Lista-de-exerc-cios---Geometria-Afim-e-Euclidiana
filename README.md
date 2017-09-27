@@ -170,12 +170,7 @@ capturadas no sistema da janela (`J`). Pede-se:
     - De acordo com as observações retiradas do item anterior, e com ajuda das pesquisas feitas no item um, concluimos que é necessário uma rotação sobre o eixo horizontal, um deslocamento de 75 unidades e um coeficiente para controle de escala igual a `1/8`, obtendo a seguinte matriz de transformação:
 
     ![](images/Matriz3b2.png)
-   <!--
-     Portanto, a matriz de transformação é:
-     | 1/8  0    0  |
-     |  0 -1/8  75  |
-     |  0   0    1  |
-   -->
+
 1. Use a matriz para calcular as coordenadas de `P` e `Q` no sistema `M`.
 
     - No item anterior, demonstramos a matriz transformadora de coordenadas. Para saber as coordenados do ponto, basta multiplicar tal matriz com a matriz coluna respectiva as coordenadas do ponto, conforme abaixo:
@@ -188,37 +183,22 @@ capturadas no sistema da janela (`J`). Pede-se:
 
     ![Ponto Q](images/Matriz3b3b.png)
 
-   <!--
-     Basta multiplicar o vetor coluna de cada ponto pela matriz. Para P:
-     | 1/8  0    0  |   | 200 |   |   25 |
-     |  0 -1/8  75  | x | 100 | = | 62,5 |
-     |  0   0    1  |   |   1 |   |    1 |
-
-     Para Q:
-     | 1/8  0    0  |   | 400 |   |   50 |
-     |  0 -1/8  75  | x | 300 | = | 37,5 |
-     |  0   0    1  |   |   1 |   |    1 |
-
-   -->
 1. Encontre a matriz inversa daquela encontrada em (1). Se você já aprendeu
    a fazer isso, você pode usar um dos métodos para matrizes 3x3, como
    Gauss-Jordan. Ou, então, use uma calculadora de matrizes inversas online.
-   <!--
-     A matriz inversa M-¹ é:
-     | 8   0     0 |
-     | 0  -8   600 |
-     | 0   0     1 |
-   -->
+
+    - Foi utilizada uma calculadora Online, conforme abaixo: (Disponível em: https://matrixcalc.org , Acessado em 26 de Setembro de 2017)
+
+    ![](images/Matriz3b4.png)
+ 
 1. Considerando um ponto `R[M] = (4, 60)`, converta ele para o sistema `J`
    para saber em que pixel ele será desenhado dentro da tela.
-   <!--
-     Para encontrar R, dado em coordenadas do mundo, no sistema da janela,
-     basta multiplicar suas coordenadas pela matriz inversa da encontrada:
-     | 8   0     0 |   |  4 |   |         32 |   |  32 |
-     | 0  -8   600 | x | 60 | = | -480 + 600 | = | 120 |
-     | 0   0     1 |   |  1 |   | 1          |   |   1 |
 
-   -->
+    - No item anterior, demonstramos a matriz inversa da transformadora de coordenadas. Para saber as coordenados do ponto, em relação ao sistema `J`, basta multiplicar a inversa com a matriz coluna respectiva as coordenadas do ponto, conforme abaixo:
+
+    - Foi utilizada uma calculadora Online, conforme abaixo: (Disponível em: https://matrixcalc.org , Acessado em 26 de Setembro de 2017)
+
+    ![Ponto R](images/Matriz3b4.png)
 
 ---
 ### **Questão 4** (prática) - 2 pontos:
