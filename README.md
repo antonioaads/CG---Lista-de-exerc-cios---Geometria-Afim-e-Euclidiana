@@ -109,11 +109,11 @@ capturadas no sistema da janela (`J`). Pede-se:
 1. Represente a base e a origem do sistema `J` (_i.e._, `O`<sub>J</sub>,
    `x`<sub>J</sub>, `y`<sub>J</sub> no sistema M.
 
-    - Pensaremos em eixos separadamente, primeiramente em x. Como eles estão alinhados verticalmente, temos que `x`<sub>J</sub> = `x`<sub>M</sub>, com isso podemos concluir que a base `x`<sub>J</sub> em relação ao sistema M é igual a: `x`<sub>JM</sub> = (1,0).
+    - Pensaremos em eixos separadamente, primeiramente em x. Como eles estão alinhados verticalmente, e possuem a mesma dimensão, temos que `x`<sub>J</sub> = `x`<sub>M</sub>, com isso podemos concluir que a base `x`<sub>J</sub> em relação ao sistema M é igual a: `x`<sub>JM</sub> = (1,0).
     
     - Iremos levar em consideração, agora, as coordenadas y. Se repararmos atenciosamente, percebemos que se aumentarmos a coordenada de `y`<sub>M</sub> e aumentarmos a coordenada de `y`<sub>J</sub>, ambas cresecem na mesma direção, porém em sentidos opostos. Logo, podemos concluir que `y`<sub>J</sub> = `-1y`<sub>M</sub>, tendo `y`<sub>jM</sub> = (0,-1).
 
-    - Para conseguirmos o relacionamento entre as origens, podemos considerar a origem `O`<sub>J</sub> como se fosse um ponto, e analisar suas coordenadas em relação a origem `O`<sub>M</sub>, obtendo `O`<sub>JM</sub> = (0,600).
+    - Para conseguirmos o relacionamento entre as origens, podemos considerar a origem `O`<sub>J</sub> como se fosse um ponto, e analisar suas coordenadas em relação a origem `O`<sub>M</sub>, obtendo `O`<sub>JM</sub> = (0,600), já que a mesma se encontra na extremidade de `y`<sub>M</sub> e paralelo verticalmente com `x`<sub>jM</sub>`.
   
 1. Encontre a matriz de mudança de sistema de coordenadas que leva um ponto
    ou vetor do sistema `J` para o sistema `M`.
@@ -121,12 +121,7 @@ capturadas no sistema da janela (`J`). Pede-se:
     - De acordo com as observações retiradas do item anterior, e com ajuda das pesquisas feitas no item um, concluimos que é necessário uma rotação sobre o eixo horizontal e um deslocamento de 600 unidades, obtendo a seguinte matriz de transformação:
 
     ![](images/Matriz3a2.png)
-   <!--
-     Portanto, a matriz de transformação é:
-     |  1   0    0  |
-     |  0  -1   600 |
-     |  0   0    1  |
-   -->
+  
 1. Use a matriz para calcular as coordenadas de `P` e `Q` no sistema `M`.
     
     - No item anterior, demonstramos a matriz transformadora de coordenadas. Para saber as coordenados do ponto, basta multiplicar tal matriz com a matriz coluna respectiva as coordenadas do ponto, conforme abaixo:
@@ -160,22 +155,21 @@ capturadas no sistema da janela (`J`). Pede-se:
 
 1. Represente a base e a origem do sistema `J` (_i.e._, `O`<sub>J</sub>,
    `x`<sub>J</sub>, `y`<sub>J</sub>) no sistema M.
-   <!--
-     Pergunta-se: quantos Xm vale 1 Xj?
-     Raciocínio: 100Xm equivalem a 800Xj. Logo, Xj = 1/8 Xm. Sendo assim,
-                 Xj[M] = (1/8, 0).
 
-                 e quantos Ym vale 1 Yj?
-                 75Ym equivalem a 600Yj, mas no sentido contrário. Logo,
-                 Yj = -1/8 Ym. Sendo assim, Yj[M] = (0, -1/8)
+    - A simetria do problema é bem semelhante a da questão anterior, porém, agora, teremos que considerar a escala, que dessa vez não é a mesma em ambas as referências.
 
-                 e como chegamos em Oj a partir de Om?
-                 Precisamos deslocar no sentido Ym 75 vezes. Logo,
-                 Oj[M] = (0, 75)
+    - Pensaremos, novamente, em eixos separadamente, primeiramente em x. Eles estão alinhados verticalmente, porém, a igualdade agora não é mais `x`<sub>J</sub> = `x`<sub>M</sub>, e sim, `800x`<sub>J</sub> = `100x`<sub>M</sub>  com isso podemos concluir que a base `x`<sub>J</sub> em relação ao sistema M é igual a: `x`<sub>JM</sub> = (1/8,0).
+    
+    - Iremos levar em consideração, agora, as coordenadas y. Como na questão anterior, podemos perceber que se aumentarmos a coordenada de `y`<sub>M</sub> e aumentarmos a coordenada de `y`<sub>J</sub>, ambas cresecem na mesma direção, porém em sentidos opostos, mas, com um detalhe crucial, semelhante a coordenada `x`, elas não crescem na mesma proporção. De acordo com os dados do programa em anexo, podemos extrair que `75y`<sub>J</sub> = `-600y`<sub>M</sub> e concluir que `y`<sub>jM</sub> = (0,-1/8).
 
-   -->
+     - Como na questão anterior, para conseguirmos o relacionamento entre as origens, podemos considerar a origem `O`<sub>J</sub> como se fosse um ponto, e analisar suas coordenadas em relação a origem `O`<sub>M</sub>, obtendo `O`<sub>JM</sub> = (0,75), já que a mesma se encontra na extremidade de `y`<sub>M</sub> e paralelo verticalmente com `x`<sub>jM</sub>`.
+
 1. Encontre a matriz de mudança de sistema de coordenadas que leva um ponto
    ou vetor do sistema `J` para o sistema `M`.
+
+    - De acordo com as observações retiradas do item anterior, e com ajuda das pesquisas feitas no item um, concluimos que é necessário uma rotação sobre o eixo horizontal, um deslocamento de 75 unidades e um coeficiente para controle de escala igual a `1/8`, obtendo a seguinte matriz de transformação:
+
+    ![](images/Matriz3b2.png)
    <!--
      Portanto, a matriz de transformação é:
      | 1/8  0    0  |
@@ -183,6 +177,17 @@ capturadas no sistema da janela (`J`). Pede-se:
      |  0   0    1  |
    -->
 1. Use a matriz para calcular as coordenadas de `P` e `Q` no sistema `M`.
+
+    - No item anterior, demonstramos a matriz transformadora de coordenadas. Para saber as coordenados do ponto, basta multiplicar tal matriz com a matriz coluna respectiva as coordenadas do ponto, conforme abaixo:
+
+    - Ponto P
+
+    ![Ponto P](images/Matriz3b3a.png)
+
+    - Ponto Q
+
+    ![Ponto Q](images/Matriz3b3b.png)
+
    <!--
      Basta multiplicar o vetor coluna de cada ponto pela matriz. Para P:
      | 1/8  0    0  |   | 200 |   |   25 |
