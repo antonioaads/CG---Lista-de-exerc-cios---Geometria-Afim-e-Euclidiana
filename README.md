@@ -10,7 +10,7 @@ escrever as matrizes com as coordenadas homogêneas.
 
 1. Translação em 2D com um deslocamento t = (4, 9)
 
-    ![](images/MatrizA.png)
+    ![teste](images/MatrizA.png)
 1. Rotação 2D no eixo Z por um ângulo &theta; = π/4
    - Considere `sin(π/4) = cos(π/4) = 0,71`
 
