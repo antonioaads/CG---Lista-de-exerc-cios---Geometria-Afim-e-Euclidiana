@@ -198,7 +198,7 @@ capturadas no sistema da janela (`J`). Pede-se:
 
     - Foi utilizada uma calculadora Online, conforme abaixo: (Disponível em: https://matrixcalc.org , Acessado em 26 de Setembro de 2017)
 
-    ![Ponto R](images/Matriz3b4.png)
+    ![Ponto R](images/Matriz3b5.png)
 
 ---
 ### **Questão 4** (prática) - 2 pontos:
