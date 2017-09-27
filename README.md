@@ -131,22 +131,13 @@ capturadas no sistema da janela (`J`). Pede-se:
     
     - No item anterior, demonstramos a matriz transformadora de coordenadas. Para saber as coordenados do ponto, basta multiplicar tal matriz com a matriz coluna respectiva as coordenadas do ponto, conforme abaixo:
 
+    - Ponto P
+
     ![Ponto P](images/Matriz3a3a.png)
 
+    - Ponto Q
+
     ![Ponto Q](images/Matriz3a3b.png)
-
-   <!--
-     Basta multiplicar o vetor coluna de cada ponto pela matriz. Para P:
-     |  1   0    0 |   | 200 |   | 200 |
-     |  0  -1  600 | x | 100 | = | 500 |
-     |  0   0    1 |   |   1 |   |   1 |
-
-     Para Q:
-     |  1    0   0 |   | 400 |   | 400 |
-     |  0  -1  600 | x | 300 | = | 300 |
-     |  0   0    1 |   |   1 |   |   1 |
-
-   -->
 
 
 (b) Agora, considere que o sistema da janela é o mesmo, mas o sistema de coordenadas do mundo (`M`) está definido assim:
