@@ -260,4 +260,5 @@ Para desenvolver e executar o código, você pode usar uma das duas alternativas
 [codigo-seminal]: https://github.com/fegemo/tad-coordenadas/archive/master.zip# CG---Lista-de-exerc-cios---Geometria-Afim-e-Euclidiana
 Lista de Exercícios Geometria Afim e Euclidiana - Disciplina de Computação Gráfica
 
-    - Pasta com os arquivos: https://github.com/antonioaads/CG---Lista-de-exerc-cios---Geometria-Afim-e-Euclidiana/tree/master/Exerc%C3%ADcio4-tad-coordenadas-master-Completo
+    - Pasta com os arquivos: 
+https://github.com/antonioaads/CG---Lista-de-exerc-cios---Geometria-Afim-e-Euclidiana/tree/master/Exerc%C3%ADcio4-tad-coordenadas-master-Completo
