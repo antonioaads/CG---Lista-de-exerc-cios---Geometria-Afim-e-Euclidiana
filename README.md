@@ -114,22 +114,13 @@ capturadas no sistema da janela (`J`). Pede-se:
     - Iremos levar em consideração, agora, as coordenadas y. Se repararmos atenciosamente, percebemos que se aumentarmos a coordenada de `y`<sub>M</sub> e aumentarmos a coordenada de `y`<sub>J</sub>, ambas cresecem na mesma direção, porém em sentidos opostos. Logo, podemos concluir que `y`<sub>J</sub> = `-1y`<sub>M</sub>, tendo `y`<sub>jM</sub> = (0,-1).
 
     - Para conseguirmos o relacionamento entre as origens, podemos considerar a origem `O`<sub>J</sub> como se fosse um ponto, e analisar suas coordenadas em relação a origem `O`<sub>M</sub>, obtendo `O`<sub>JM</sub> = (0,600).
-   <!--
-     Pergunta-se: quantos Xm vale 1 Xj?
-     Raciocínio: 800Xm equivalem a 800Xj. Logo, Xj = Xm. Sendo assim,
-                 Xj[M] = (1, 0).
-
-                 e quantos Ym vale 1 Yj?
-                 600Ym equivalem a 600Yj, mas no sentido contrário. Logo,
-                 Yj = -1 Ym. Sendo assim, Yj[M] = (0, -1)
-
-                 e como chegamos em Oj a partir de Om?
-                 Precisamos deslocar no sentido Ym 75 vezes. Logo,
-                 Oj[M] = (0, 600)
-
-   -->
+  
 1. Encontre a matriz de mudança de sistema de coordenadas que leva um ponto
    ou vetor do sistema `J` para o sistema `M`.
+    
+    - De acordo com as observações retiradas do item anterior, e com ajuda das pesquisas feitas no item um, concluimos que é necessário uma rotação sobre o eixo horizontal e um deslocamento de 600 unidades, obtendo a seguinte matriz de transformação:
+
+    ![](images/Matriz3a2.png)
    <!--
      Portanto, a matriz de transformação é:
      |  1   0    0  |
@@ -137,6 +128,13 @@ capturadas no sistema da janela (`J`). Pede-se:
      |  0   0    1  |
    -->
 1. Use a matriz para calcular as coordenadas de `P` e `Q` no sistema `M`.
+    
+    - No item anterior, demonstramos a matriz transformadora de coordenadas. Para saber as coordenados do ponto, basta multiplicar tal matriz com a matriz coluna respectiva as coordenadas do ponto, conforme abaixo:
+
+    ![Ponto P](images/Matriz3a3a.png)
+
+    ![Ponto Q](images/Matriz3a3b.png)
+
    <!--
      Basta multiplicar o vetor coluna de cada ponto pela matriz. Para P:
      |  1   0    0 |   | 200 |   | 200 |
